@@ -1,18 +1,12 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
- */
 
 import React, { Component } from 'react';
+
 import {
-  AppRegistry,
   StyleSheet,
   Text,
   View,
 } from 'react-native';
 
-var Login = require('./Login');
 
 const styles = StyleSheet.create({
   container: {
@@ -33,12 +27,12 @@ const styles = StyleSheet.create({
   },
 });
 
-class PluralTodo extends Component {
-  render() {
+var Login = React.createClass({
+  render: function () {
     return (
-      <Login/>
+      <Text style={styles.container}>Hello</Text>
     );
   }
-}
+})
 
-AppRegistry.registerComponent('PluralTodo', () => PluralTodo);
+module.exports = Login;
